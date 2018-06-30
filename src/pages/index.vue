@@ -21,7 +21,8 @@
 
         <div class="daContainer bg3 dropShadow down" id="sect4" v-waypoint="{ active: true, callback: onWaypoint }">
             <div class="contentReducer">
-
+              <api></api>
+              <api2></api2>
             </div>
         </div>
 
@@ -49,6 +50,8 @@
 import intro from '../myM/1_intro'
 import welcome from '../myM/2_welcome'
 import service from '../myM/3_service'
+import api from '../myM/a_userAuth'
+import api2 from '../myM/a_basic'
 
 import s_parallax from '../myM/s_parallax'
 
@@ -59,6 +62,8 @@ export default {
         welcome,
         service,
         s_parallax,
+        api,
+        api2,
 
     },
     methods: {

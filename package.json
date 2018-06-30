@@ -18,7 +18,8 @@
     "vue-scroll-reveal": "^1.0.8",
     "vue-scrollto": "^2.11.0",
     "vue-waypoint": "^3.2.2",
-    "vueisotope": "^3.1.2"
+    "vueisotope": "^3.1.2",
+    "vuelidate": "^0.7.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
