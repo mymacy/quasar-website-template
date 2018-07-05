@@ -44,7 +44,8 @@ export default {
         password_new: "",
 			},
 			status: "unknown",
-			myApi: 'http://127.0.0.1:8000/api/'
+      // myApi: 'http://127.0.0.1:8000/api/',         // dev
+      myApi: window.location.origin+"/api/",    // production
 		}
 	},
 	methods: {

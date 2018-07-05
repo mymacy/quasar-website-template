@@ -8,6 +8,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
 	data() {
@@ -17,7 +18,8 @@ export default {
         "item2",
         "item3",
 			],
-			myApi: 'http://127.0.0.1:8000/api/'
+      // myApi: 'http://127.0.0.1:8000/api/',         // dev
+      myApi: window.location.origin+"/api/",    // production
 		}
 	},
 	methods: {
@@ -67,7 +69,7 @@ export default {
       let theAdress = this.myApi + 'rezept/create/'
       let theDataToSend = {
         titel: "arswchfwicken350",
-        // password: this.imput.password
+        langerText: "dies islang"
       }
       let theConfigToUse = {
         headers: {
@@ -92,6 +94,7 @@ export default {
   },
 }
 </script>
+
 
 <style>
   .btns {

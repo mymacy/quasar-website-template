@@ -26,12 +26,12 @@ module.exports = function (ctx) {
     supportIE: false,
     build: {
       scopeHoisting: true,
-      vueRouterMode: 'hash',
+      vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,
       // analyze: true,
       // extractCSS: false,
-      publicPath: '/static/',
+      publicPath: '/static/', // switch this for cordova builds
       extendWebpack (cfg) {
         cfg.module.rules.push({
 
@@ -99,8 +99,13 @@ module.exports = function (ctx) {
     //   // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
     //   // i18n: 'de' // Quasar language
     },
-    // animations: 'all' --- includes all animations
-    // animations: 'all',
+    animations: 'all',  // includes all animations
+    // animations: [
+    //   'fadeInLeft',
+    //   'fadeInRight',
+    //   'fadeOutLeft',
+    //   'fadeOutRight'
+    // ],
     pwa: {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {},
